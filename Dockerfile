@@ -16,7 +16,6 @@ RUN mkdir -p /app \
     && chmod 755 /opt/startup/init_container.sh
 
 COPY sshd_config /etc/ssh/
-COPY package*.json ./
 
 COPY .\bin\Debug\netcoreapp3.1\publish .
 
