@@ -17,7 +17,7 @@ RUN mkdir -p /app \
 
 COPY sshd_config /etc/ssh/
 
-COPY .\bin\Debug\netcoreapp3.1\publish .
+COPY ./bin/Debug/netcoreapp3.1/publish .
 
 EXPOSE 8080
 
