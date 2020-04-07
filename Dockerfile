@@ -19,9 +19,10 @@ COPY sshd_config /etc/ssh/
 
 COPY ./bin/Debug/netcoreapp3.1/publish .
 
-EXPOSE 8080
+EXPOSE 5000
 
-ENV PORT 8080
+ENV PORT 5000
+ENV ASPNETCORE_URLS=http://0.0.0.0:5000
 ENV PATH ${PATH}:/app
 
 ENV APP_HOME "/app"
